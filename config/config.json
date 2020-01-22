@@ -1,0 +1,29 @@
+{
+    "development": {
+        "config_id": "development",
+        "app_name": "my app",
+        "app_desc": "my app desc",
+        "node_port": 81,
+        "database": {
+            "host":"localhost",
+            "user":"root",
+            "password":"",
+            "name":"todo"
+        },
+        "dir_images":"./public/images/"
+    },
+    "testing": {
+        "config_id": "testing",
+        "database": "my-app-db-test"
+    },
+    "staging": {
+        "config_id": "staging",
+        "node_port": 8080,
+        "database": "my-app-db-stag"
+    },
+    "production": {
+        "config_id": "production",
+        "node_port": 8080,
+        "database": "my-app-db-prod"
+    }
+}

@@ -1,0 +1,26 @@
+<style>
+    .activeMenu {
+    color: #7386D5;
+    background: #fff;
+}
+</style>
+
+<nav id="sidebar">
+    <div class="sidebar-header">
+      <h3>Score game</h3>
+    </div>
+
+    <ul class="list-unstyled components">
+      <p>Menu</p>
+      <li class="active">
+        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Danh sách game</a>
+        <ul class="list-unstyled" id="homeSubmenu">
+          <li><a href="/"
+            <%if (activeMenu=='home') { %>
+                class="activeMenu"
+                <% } %>
+            >Tất cả</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
